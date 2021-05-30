@@ -1,0 +1,109 @@
+
+/*Configurações Globais*/
+
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+html, body
+{
+    font-family: Arial, Helvetica, sans-serif !important;
+    overflow-y: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+:root 
+{
+    --dark: rgb(32, 32, 32)
+    --white: #eeeeeb;
+    --gray: #93a5ad;
+    --darkGreen: #2f6a3f;
+    --lightGreen: #accc46;
+    --red: #dc3b49;
+}
+
+
+/*Configurações Barra de navegação vertical*/
+
+header 
+{
+    height: 100%;
+    display: inline-block;
+    width: 12.5%;
+    border-right: 1px solid rgba(128, 128, 128, 0.144);
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.63);
+}
+
+.sidebar 
+{
+    width: 90%;
+    height: 97%;
+    display: block;
+    margin: auto;
+    border: 1px solid green;
+}
+
+.sidebar-box-head
+{
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.144);
+}
+
+.sidebar-box h6
+{
+    font-size: 12px;
+    color: var(--lightGreen);
+    font-weight: 700;
+    margin: 2em 0 0.7em 0.8em;
+    padding-left: 0.6em;
+    text-transform: uppercase;
+}
+
+.sidebar-item
+{
+    font-size: smaller;
+}
+
+.sidebar-item a
+{
+    text-decoration: none;
+    color: var(--dark);
+    padding-left: 1em;
+    display: flex;
+    padding-left: 2em;
+    padding-top: 1em;
+}
+
+.sidebar-item a:hover, a:visited
+{
+    color: var(--dark);
+    background-color: rgba(128, 128, 128, 0.144);
+    cursor: pointer;
+}
+
+.sidebar-item a p
+{
+    margin: 0 0 1em 1em;
+}
+
+.sidebar-item .fas, .far
+{
+    color: var(--lightGreen);
+}
+
+.sidebar-select
+{
+    background-color: rgba(128, 128, 128, 0.144);
+}
+
+/*Configurações Conteúdo*/
+
+main
+{
+    display: inline-block;
+}

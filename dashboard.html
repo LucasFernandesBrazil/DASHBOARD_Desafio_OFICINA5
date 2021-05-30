@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | MONITORAMENTO</title>
+
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!--Link BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+        crossorigin="anonymous"></script>
+
+    <!--Link FONT AWESOME-->
+    <script src="https://kit.fontawesome.com/6782444073.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header id="sidebar" >
+            <div class="sidebar-box-head">
+                <a href="#">
+                    <img src="Vetores/Vetorização Logo/Oficina 5.svg" alt="Logotipo Oficina 5" width="50%">
+                </a>
+            </div>
+            <div class="sidebar-box">
+                <h6>Cadastros</h6>
+                <div class="sidebar-item">
+                    <a href="#">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Locais</p>
+                    </a>
+                </div>
+
+                <div class="sidebar-item">
+                    <a href="">
+                        <i class="fas fa-user-friends"></i>
+                        <p>Grupos</p>
+                    </a>
+                </div>
+
+                <div class="sidebar-item">
+                    <a href="">
+                        <i class="fas fa-code"></i>
+                        <p>Parâmetros Equipamento</p>
+                    </a>
+                </div>
+
+                <div class="sidebar-item">
+                    <a href="">
+                        <i class="fas fa-keyboard"></i>
+                        <p>Periféricos</p>
+                    </a>
+                </div>
+
+                <div class="sidebar-item">
+                    <a href="">
+                        <i class="fas fa-microchip"></i>
+                        <p>Equipamentos</p>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="sidebar-box">
+                <h6>Dashboards</h6>
+
+                <div class="sidebar-item sidebar-select">
+                    <a href="">
+                        <i class="far fa-chart-bar"></i>
+                        <p>Monitoramento</p>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="sidebar-box">
+                <h6>Específicos</h6>
+
+                <div class="sidebar-item">
+                    <a href="">
+                        <i class="fas fa-calendar-alt"></i>
+                        <p>Calendário</p>
+                    </a>
+                </div>
+
+                <div class="sidebar-item">
+                    <a href="">
+                        <i class="fas fa-user"></i>
+                        <p>Indicadores (Usuários)</p>
+                    </a>
+                </div>
+
+                <div class="sidebar-item">
+                    <a href="">
+                        <i class="fas fa-sitemap"></i>
+                        <p>GED</p>
+                    </a>
+                </div>
+
+                <div class="sidebar-item">
+                    <a href="">
+                        <i class="fas fa-clipboard-list"></i>
+                        <p>Auditoria</p>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="sidebar-box">
+                <h6>Interações/EDI</h6>
+
+                <div class="sidebar-item">
+                    <a href="">
+                        <i class="fas fa-clone"></i>
+                        <p>Categorias</p>
+                    </a>
+                </div>
+
+            </div>
+    </header>
+
+    <main id="body">
+        
+    </main>
+
+    <script>
+        function sidebar_open() {
+            document.getElementById("body").style.marginLeft = "25%";
+            document.getElementById("sidebar").style.width = "25%";
+            document.getElementById("sidebar").style.display = "block";
+            document.getElementById("openSidebar").style.display = 'none';
+        }
+
+        function sidebar_close() {
+            document.getElementById("body").style.marginLeft = "0%";
+            document.getElementById("sidebar").style.display = "none";
+            document.getElementById("openSidebar").style.display = "inline-block";
+        }
+    </script>
+
+</body>
+
+</html>
