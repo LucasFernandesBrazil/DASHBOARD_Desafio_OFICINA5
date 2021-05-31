@@ -16,8 +16,7 @@ html, body
 
 .container_dashboard
 {
-    padding-left: 1em;
-    padding-right: 1em;
+    padding: 1em 1em 1em 1em
 }
 
 :root 
@@ -25,9 +24,10 @@ html, body
     --dark: rgb(32, 32, 32)
     --white: #eeeeeb;
     --gray: #93a5ad;
-    --darkGreen: #2f6a3f;
+    --darkGreen: #53A451;
     --lightGreen: #accc46;
     --red: #dc3b49;
+    --lightRed: #EDE1E3;
 }
 
 
@@ -235,7 +235,7 @@ nav .navtop button i .fas
 .display-max button
 {
     background: none;
-    border: 1px solid black;
+    border: 1px solid rgba(128, 128, 128, 0.300);
     padding: 0.4em 1em 0.4em 1em;
     margin-right: 1em;
 }
@@ -244,4 +244,104 @@ nav .navtop button i .fas
 {
     font-weight: 600;
     font-size: 14px;
+}
+
+.display-max i.fas
+{
+    color: var(--lightGreen);
+    margin-right: 6px;
+}
+
+
+/*Configurações Conteúdo Dashboard*/
+
+.box-primary 
+{
+    display: flex;
+    padding: 1em;
+    margin-bottom: 1.5em;
+    color: var(--dark);
+    border-radius: 0.3em;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.384);
+}
+
+.box-icon
+{
+    display: inline-block;
+    align-self: center;
+    margin-left: auto;
+}
+
+.icon-white i.far, .icon-white i.fas
+{
+    color: white;
+    font-size: 3em;
+}
+
+.icon-dark-green i.far, .icon-dark-green i.fas
+{
+    color: var(--darkGreen);
+    font-size: 3em;
+}
+
+.icon-light-green i.far, .icon-light-green i.fas
+{
+    color: var(--lightGreen);
+    font-size: 3em;
+}
+
+.icon-red i.far, .icon-red i.fas
+{
+    color: var(--red);
+    font-size: 3em;
+}
+
+.box-title
+{
+    display: block;
+}
+
+.box-title h4
+{
+    font-weight: 700;
+}
+
+.title-dark-green h4
+{
+    color: var(--darkGreen);
+}
+
+.title-red h4
+{
+    color: var(--red);
+}
+
+.box-title p
+{
+    margin: 0;
+}
+
+.box-green 
+{
+    background:var(--darkGreen);
+}
+
+.box-green h4, .box-green p
+{
+    color: white;
+}
+
+.box-red 
+{
+    background:var(--lightRed);
+}
+
+
+.sub-menu a
+{
+    text-decoration: none;
+    color: var(--dark);
+    font-size: 0.8em;
+    font-weight: 600;
+    margin-right: 2em;
 }
