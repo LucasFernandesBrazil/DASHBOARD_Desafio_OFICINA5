@@ -336,6 +336,11 @@ nav .navtop button i .fas
     background:var(--lightRed);
 }
 
+.box-small-green
+{
+    background: chocolate;
+}
+
 
 .sub-menu a
 {
@@ -344,4 +349,27 @@ nav .navtop button i .fas
     font-size: 0.8em;
     font-weight: 600;
     margin-right: 2em;
+}
+
+.dashboard-content
+{
+    border: 1px solid red;
+}
+
+.title-small h6
+{
+    font-weight: 800;
+    font-size: 0.8em;
+}
+
+.text-dark-green
+{
+    color: var(--darkGreen);
+    font-weight: 600;
+}
+
+.text-red
+{
+    color: var(--red);
+    font-weight: 600;
 }
