@@ -14,11 +14,6 @@ html, body
     height: 100%;
 }
 
-main
-{
-    display: block;
-}
-
 .container_dashboard
 {
     padding-left: 1em;
@@ -150,6 +145,13 @@ nav .navtop button i .fas
     display: inline;
 }
 
+.navtop button
+{
+    background: none;
+    border: none;
+    color: var(--lightGreen);
+}
+
 /*Configurações INFO BAR*/
 
 .infoBar
@@ -161,6 +163,7 @@ nav .navtop button i .fas
 
 .infoBar-box
 {
+    font-size: small;
     display: inline-block;
     padding: 0.5em 1em 0.5em 1em;
     border-right: 1px solid rgba(128, 128, 128, 0.603);
@@ -176,4 +179,69 @@ nav .navtop button i .fas
 {
     background: none;
     border: none;
+}
+
+.infoBar-activated
+{
+    background: rgb(218, 235, 191);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.603);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.267);
+}
+
+
+/*Configurações da PAGE-TITLE*/
+
+#Page-title
+{
+    box-shadow: 0 0 0.2em rgba(0, 0, 0, 0.397);
+    display: flex;
+}
+
+.title
+{
+    margin: 2em 1em 2em 1em;
+    display: block;
+}
+
+.title h5
+{
+    color: var(--dark);
+    font-weight: 700;
+    font-size: 2em;
+    margin: 0;
+}
+
+#Page-title .title span
+{
+    color: var(--gray);
+    opacity: 0.6;
+    font-size: 0.8em;
+}
+
+#Page-title .title i.fas
+{
+    color: var(--gray);
+    opacity: 0.6;
+    font-size: 0.8em;
+}
+
+.display-max
+{
+    display: inline-block;
+    align-self: center;
+    margin-left: auto;
+}
+
+.display-max button
+{
+    background: none;
+    border: 1px solid black;
+    padding: 0.4em 1em 0.4em 1em;
+    margin-right: 1em;
+}
+
+.display-max span
+{
+    font-weight: 600;
+    font-size: 14px;
 }

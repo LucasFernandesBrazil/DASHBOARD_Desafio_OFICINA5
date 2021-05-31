@@ -134,8 +134,8 @@
 
     <main id="main">
         
-        <nav class="navtop navbar navbar-light bg-light">
-                <button class="openbtn btn btn-outline-sucess" onclick="sideBar_recall()">
+        <nav class="navtop navbar navbar-light bg-light"> <!--Início NavTop-->
+                <button class="openbtn" onclick="sideBar_recall()">
                     <i class="fas fa-bars"></i>
                 </button>
                 <div class="justify-content-end nav-icon">
@@ -146,9 +146,9 @@
                         <i class="fas fa-user-cog"></i>
                     </a>
                 </div>
-          </nav>
+          </nav> <!--Fim NavTop-->
 
-          <div class="infoBar">
+          <div class="infoBar"><!--Início InfoBar-->
 
               <div class="infoBar-box">
                 <i class="fas fa-user-circle"></i>
@@ -161,13 +161,26 @@
                 <button><i class="fas fa-times-circle"></i></button>
               </div>
 
-              <div class="infoBar-box">
+              <div class="infoBar-box infoBar-activated">
                 <i class="fas fa-clone"></i>
                 <span>Monitoramento</span>
                 <button><i class="fas fa-times-circle"></i></button>
               </div>
+          </div><!--Fim InfoBar-->
 
-          </div>
+          <section id="Page-title">
+              <div class="title">
+                <h5>Monitoramento</h5>
+                <i class="fas fa-home"></i>
+                <span>&nbsp• Monitoramento</span>
+              </div>
+              <div class="display-max">
+                  <button>
+                    <i class="fas fa-compress"></i>
+                    <span>Maximizar</span>
+                  </button>
+              </div>
+          </section>
 
     </main>
 
