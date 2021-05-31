@@ -30,8 +30,7 @@
 
 <body>
 
-    <header id="mySidebar">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <header id="Sidebar">
             <div class="sidebar-box-head">
                 <a href="#">
                     <img src="Vetores/Vetorização Logo/Oficina 5.svg" alt="Logotipo Oficina 5" width="50%">
@@ -136,26 +135,21 @@
     <main id="main">
         
         <nav class="navbar navbar-light bg-light">
-                <button class="openbtn btn btn-outline-sucess me-2" onclick="openNav()">
+                <button class="openbtn btn btn-outline-sucess me-2" onclick="sideBar_recall()">
                     <i class="fas fa-bars"></i>
                 </button>
-                <a href="#" class="nav-link"><i class="fab fa-bluetooth-b"></i></a>
-                <a href="#" class="nav-link"><i class="fas fa-user-cog"></i></a>
+                <div class="ml-auto">
+                    <a href="#" class="nav-link ml-auto">
+                        <i class="fab fa-bluetooth-b"></i>
+                    </a>
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-user-cog"></i>
+                    </a>
+                </div>
           </nav>
     </main>
 
-    <script>
-        function openNav() {
-            document.getElementById("mySidebar").style.width = "12%";
-            document.getElementById("main").style.marginLeft = "12%";
-        }
-
-
-        function closeNav() {
-            document.getElementById("mySidebar").style.width = "0";
-            document.getElementById("main").style.marginLeft = "0";
-        } 
-    </script>
+    <script src="JS/button.js"></script>
 
 </body>
 

@@ -16,7 +16,7 @@ html, body
 
 main
 {
-    display: inline-block;
+    display: block;
 }
 
 :root 
@@ -102,10 +102,21 @@ header
     background-color: rgba(128, 128, 128, 0.144);
 }
 
+
 /*Configurações Barra de navegação PRIMÁRIA*/
+
+main 
+{
+    transition: margin-left .5s; 
+}
 
 nav 
 {
     width: auto;
+}
+
+nav .nav-link, btn
+{
+    color: var(--lightGreen);
 }
 
