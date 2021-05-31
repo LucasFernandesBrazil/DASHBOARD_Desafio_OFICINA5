@@ -57,7 +57,7 @@ header
 
 .sidebar-box h6
 {
-    font-size: 12px;
+    font-size: 0.7em;
     color: var(--lightGreen);
     font-weight: 700;
     margin: 2em 0 0.7em 0.8em;
@@ -67,7 +67,7 @@ header
 
 .sidebar-item
 {
-    font-size: smaller;
+    font-size: 0.7em;
 }
 
 .sidebar-item a
@@ -92,6 +92,8 @@ header
     margin: 0 0 1em 1em;
 }
 
+
+
 .sidebar-item .fas, .far
 {
     color: var(--lightGreen);
@@ -115,8 +117,29 @@ nav
     width: auto;
 }
 
-nav .nav-link, btn
+nav .navbar-link, btn
 {
     color: var(--lightGreen);
+    padding-left: 1em;
+}
+
+nav .nav-icon 
+{
+    margin-right: 1em;
+}
+
+nav .navtop button i .fas
+{
+    color: var(--lightGreen);
+}
+
+.navtop button 
+{
+    margin-left: 1em;
+} 
+
+.navbar-item
+{
+    display: inline;
 }
 
