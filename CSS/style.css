@@ -10,9 +10,13 @@
 html, body
 {
     font-family: Arial, Helvetica, sans-serif !important;
-    overflow-y: hidden;
     width: 100%;
     height: 100%;
+}
+
+main
+{
+    display: inline-block;
 }
 
 :root 
@@ -30,20 +34,17 @@ html, body
 
 header 
 {
+    top: 0;
+    left: 0;
+    width: 0;
     height: 100%;
     display: inline-block;
-    width: 12.5%;
+    position: fixed;
     border-right: 1px solid rgba(128, 128, 128, 0.144);
     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.63);
-}
-
-.sidebar 
-{
-    width: 90%;
-    height: 97%;
-    display: block;
-    margin: auto;
-    border: 1px solid green;
+    overflow-x: hidden;
+    z-index: 1;
+    transition: 0.5s;
 }
 
 .sidebar-box-head
@@ -101,9 +102,10 @@ header
     background-color: rgba(128, 128, 128, 0.144);
 }
 
-/*Configurações Conteúdo*/
+/*Configurações Barra de navegação PRIMÁRIA*/
 
-main
+nav 
 {
-    display: inline-block;
+    width: auto;
 }
+

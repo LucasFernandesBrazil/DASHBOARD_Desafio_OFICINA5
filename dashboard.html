@@ -30,7 +30,8 @@
 
 <body>
 
-    <header id="sidebar" >
+    <header id="mySidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <div class="sidebar-box-head">
                 <a href="#">
                     <img src="Vetores/Vetorização Logo/Oficina 5.svg" alt="Logotipo Oficina 5" width="50%">
@@ -129,27 +130,31 @@
                         <p>Categorias</p>
                     </a>
                 </div>
-
             </div>
     </header>
 
-    <main id="body">
+    <main id="main">
         
+        <nav class="navbar navbar-light bg-light">
+                <button class="openbtn btn btn-outline-sucess me-2" onclick="openNav()">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <a href="#" class="nav-link"><i class="fab fa-bluetooth-b"></i></a>
+                <a href="#" class="nav-link"><i class="fas fa-user-cog"></i></a>
+          </nav>
     </main>
 
     <script>
-        function sidebar_open() {
-            document.getElementById("body").style.marginLeft = "25%";
-            document.getElementById("sidebar").style.width = "25%";
-            document.getElementById("sidebar").style.display = "block";
-            document.getElementById("openSidebar").style.display = 'none';
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "12%";
+            document.getElementById("main").style.marginLeft = "12%";
         }
 
-        function sidebar_close() {
-            document.getElementById("body").style.marginLeft = "0%";
-            document.getElementById("sidebar").style.display = "none";
-            document.getElementById("openSidebar").style.display = "inline-block";
-        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        } 
     </script>
 
 </body>
