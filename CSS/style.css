@@ -19,6 +19,12 @@ main
     display: block;
 }
 
+.container_dashboard
+{
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
 :root 
 {
     --dark: rgb(32, 32, 32)
@@ -114,6 +120,7 @@ main
 
 nav 
 {
+    display: block;
     width: auto;
 }
 
@@ -143,3 +150,30 @@ nav .navtop button i .fas
     display: inline;
 }
 
+/*Configurações INFO BAR*/
+
+.infoBar
+{
+    width: 100%;
+    display: inline-block;
+    background-color:rgb(229,237, 217)
+}
+
+.infoBar-box
+{
+    display: inline-block;
+    padding: 0.5em 1em 0.5em 1em;
+    border-right: 1px solid rgba(128, 128, 128, 0.603);
+    justify-content: start;
+}
+
+.infoBar-box .fas
+{
+    color: var(--lightGreen);
+}
+
+.infoBar-box button
+{
+    background: none;
+    border: none;
+}
