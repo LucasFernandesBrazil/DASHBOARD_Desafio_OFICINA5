@@ -722,3 +722,8 @@ nav .navtop button i .fas
     font-size: 0.7em;
     color: gray;
 }
+
+.propertiesReactor .box-icon-secundary-red i.far
+{
+    color: var(--red);
+}
