@@ -221,14 +221,14 @@ nav .navtop button i .fas
 
 #Page-title .title span
 {
-    color: var(--gray);
+    color: gray;
     opacity: 0.6;
     font-size: 0.8em;
 }
 
 #Page-title .title i.fas
 {
-    color: var(--gray);
+    color: gray;
     opacity: 0.6;
     font-size: 0.8em;
 }
