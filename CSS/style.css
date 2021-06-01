@@ -22,10 +22,12 @@ main
 .container_dashboard
 {
     padding: 1em 1em 1em 1em;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.150);
 }
 
 :root 
 {
+    --text: rgb(97, 97, 97);
     --border: rgba(128, 128, 128, 0.144);
     --dark: rgb(32, 32, 32);
     --white: #eeeeeb;
@@ -222,7 +224,7 @@ nav .navtop button i .fas
 
 .title h5
 {
-    color: var(--dark);
+    color: var(--text);
     font-weight: 700;
     font-size: 2em;
     margin: 0;
@@ -261,6 +263,7 @@ nav .navtop button i .fas
 {
     font-weight: 600;
     font-size: 14px;
+    color: var(--text);
 }
 
 .display-max i.fas
@@ -292,18 +295,20 @@ nav .navtop button i .fas
 {
     margin: 0;
     font-size: 0.8em;
+    color: var(--text);
 }
 
 .box-secundary h4
 {
     margin: 0;
-    color: rgb(97, 97, 97);
+    color: var(--text);
 }
 
 .box-secundary p
 {
     margin: 0;
     font-size: 0.8em;
+    color: var(--text);
 }
 
 .box-secundary 
@@ -468,7 +473,7 @@ nav .navtop button i .fas
 .sub-menu a
 {
     text-decoration: none;
-    color: var(--dark);
+    color: var(--text);
     font-size: 0.8em;
     font-weight: 600;
     margin-right: 2em;
@@ -492,6 +497,7 @@ nav .navtop button i .fas
 {
     font-weight: 800;
     font-size: 0.8em;
+    color: var(--text);
 }
 
 .text-dark-green
@@ -540,7 +546,7 @@ nav .navtop button i .fas
 
 .box-reactors button i.fas, .box-reactors button i.far
 {
-    color: rgba(128, 128, 128, 0.500);
+    color: var(--lightGreen);
 }
 
 .box-reactors-green i.fas, .box-reactors-green i.far
@@ -552,13 +558,13 @@ nav .navtop button i .fas
 .box-reactors-green h6
 {
     padding-top: 0.5em;
-    color: var(--dark);
+    color: var(--text);
     margin: 0;
 }
 
 .box-reactors-green p
 {
-    color: var(--dark);
+    color: var(--text);
     margin: 0;
     font-size: 0.8em;
 }
@@ -577,13 +583,13 @@ nav .navtop button i .fas
 .box-reactors-red h6
 {
     padding-top: 0.5em;
-    color: var(--dark);
+    color: var(--text);
     margin: 0;
 }
 
 .box-reactors-red p
 {
-    color: var(--dark);
+    color: var(--text);
     margin: 0;
     font-size: 0.8em;
 }
@@ -596,6 +602,11 @@ nav .navtop button i .fas
     align-items: center;
     font-size: 0.8em;
     justify-content: center;
+}
+
+.box-reactors-vertical h4
+{
+    color: var(--text);
 }
 
 .box-reactors-secundary-red
@@ -634,12 +645,13 @@ nav .navtop button i .fas
 {
     font-size: 1.2em;
     font-weight: 700;
-    color: rgb(97, 97, 97);
+    color: var(--text);
 }
 
 .modal-header h5
 {
     font-weight: 600;
+    color: var(--text);
 }
 
 .icon i.fas, .icon i.far
@@ -695,11 +707,13 @@ nav .navtop button i .fas
     padding: 0;
     font-size: 0.8em;
     font-weight: 800;
+    color: var(--text);
 }
 
 .infoReactor p
 {
     margin: 0;
+    color: var(--text);
 }
 
 .propertiesReactor
@@ -728,6 +742,7 @@ nav .navtop button i .fas
     margin: 0;
     font-weight: 600;
     font-size: 1.8em;
+    color: var(--text);
 }
 
 .propertiesReactor-text p
@@ -737,7 +752,7 @@ nav .navtop button i .fas
     text-transform: uppercase;
     font-weight: 600;
     font-size: 0.7em;
-    color: gray;
+    color: var(--text);
 }
 
 .propertiesReactor .box-icon-secundary-red i.far
