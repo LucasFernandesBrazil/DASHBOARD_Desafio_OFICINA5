@@ -297,6 +297,7 @@ nav .navtop button i .fas
 .box-secundary h4
 {
     margin: 0;
+    color: rgb(97, 97, 97);
 }
 
 .box-secundary p
@@ -633,6 +634,7 @@ nav .navtop button i .fas
 {
     font-size: 1.2em;
     font-weight: 700;
+    color: rgb(97, 97, 97);
 }
 
 .modal-header h5
