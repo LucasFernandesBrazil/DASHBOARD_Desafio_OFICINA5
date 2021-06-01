@@ -456,6 +456,7 @@ nav .navtop button i .fas
 {
     border: 1px solid rgba(128, 128, 128, 0.144);
     border-radius: 0.4em;
+    background-color: white;
 }
 
 .title-small h6
@@ -598,4 +599,12 @@ nav .navtop button i .fas
 .box-reactors-secundary
 {
     color: var(--dark);
+}
+
+.content {
+    background-color: #F2F2F2;
+}
+
+.bkg-white {
+    background-color: white;
 }
