@@ -26,7 +26,8 @@ main
 
 :root 
 {
-    --dark: rgb(32, 32, 32)
+    --border: rgba(128, 128, 128, 0.144);
+    --dark: rgb(32, 32, 32);
     --white: #eeeeeb;
     --gray: #F2F5F9;
     --green: #F0F7EE;
@@ -326,7 +327,6 @@ nav .navtop button i .fas
 {
     display: inline-block;
     align-self: center;
-    color: var(--darkGreen);
     padding: 1em;
     margin-right: 1em;
     background: var(--green);
@@ -337,11 +337,20 @@ nav .navtop button i .fas
 {
     display: inline-block;
     align-self: center;
-    color: var(--red);
     padding: 1em;
     margin-right: 1em;
     background: var(--lightRed);
     border-radius: 0.3em;
+}
+
+.box-icon-secundary-red i.fas, .box-icon-secundary-red i.far
+{
+    color: var(--red);
+}
+
+.box-icon-secundary-green i.fas, .box-icon-secundary-green i.far
+{
+    color: var(--darkGreen);
 }
 
 
@@ -605,9 +614,36 @@ nav .navtop button i .fas
     color: var(--dark);
 }
 
+.identifier-text h6
+{
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.modal-header h5
+{
+    font-weight: 600;
+}
+
+.icon i.fas, .icon i.far
+{
+    padding: 1em;
+    background-color: var(--gray);
+    border-radius: 50%;
+}
+
 .statusReactor
 {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 0 1em 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.statusReactor i
+{
+    display: inline;
 }
 
 .statusReactorGreen p
@@ -617,17 +653,72 @@ nav .navtop button i .fas
     font-size: 0.75em;
     font-weight: 700;
     margin-left: 0.5em;
-    text-align: center;
-    border: 1px solid red;
 }
 
 .statusReactorGreen i.fas, .statusReactorGreen i.far
 {
     color: var(--darkGreen);
     font-size: 0.75em;
+    top: 50%;
 }
 
 .statusReactorGreen span
 {
     margin-left: auto;
+}
+
+.infoReactor
+{
+    text-align: start;
+    margin-right: 3em;
+}
+
+.infoReactor h6
+{
+    padding: 0;
+    font-size: 0.8em;
+    font-weight: 800;
+}
+
+.infoReactor p
+{
+    margin: 0;
+}
+
+.propertiesReactor
+{
+    margin: 0.5em 0;
+    display: block;
+    text-align: start;
+    align-items: center;
+    justify-content: center;
+}
+
+.propertiesReactor-box
+{
+    display: flex;
+    margin: 0.5em 0;
+}
+
+.propertiesReactor-text
+{
+    align-self: center;
+}
+
+.propertiesReactor-text h4
+{
+    padding: 0;
+    margin: 0;
+    font-weight: 600;
+    font-size: 1.8em;
+}
+
+.propertiesReactor-text p
+{
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.7em;
+    color: gray;
 }
