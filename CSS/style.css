@@ -24,10 +24,11 @@ html, body
     --dark: rgb(32, 32, 32)
     --white: #eeeeeb;
     --gray: #93a5ad;
+    --green: #F0F7EE;
     --darkGreen: #53A451;
     --lightGreen: #accc46;
     --red: #dc3b49;
-    --lightRed: #EDE1E3;
+    --lightRed: #F9EAE8;
 }
 
 
@@ -258,11 +259,51 @@ nav .navtop button i .fas
 .box-primary 
 {
     display: flex;
-    padding: 1em;
+    padding: 1.5em 1em;
     margin-bottom: 1.5em;
     color: var(--dark);
     border-radius: 0.3em;
     box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.384);
+}
+
+.box-primary h4
+{
+    margin: 0;
+}
+
+.box-primary p
+{
+    margin: 0;
+    font-size: 0.8em;
+}
+
+.box-secundary h4
+{
+    margin: 0;
+}
+
+.box-secundary p
+{
+    margin: 0;
+    font-size: 0.8em;
+}
+
+.box-secundary 
+{
+    display: flex;
+    height: 4.5em;
+    padding: 0.5em;
+    margin-bottom: 1.5em;
+    color: var(--dark);
+    border-radius: 0.3em;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.384);
+}
+
+.alert-bars
+{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.300);
 }
 
 .box-icon
@@ -271,6 +312,29 @@ nav .navtop button i .fas
     align-self: center;
     margin-left: auto;
 }
+
+.box-icon-secundary-green
+{
+    display: inline-block;
+    align-self: center;
+    color: var(--darkGreen);
+    padding: 1em;
+    margin-right: 1em;
+    background: var(--green);
+    border-radius: 0.3em;
+}
+
+.box-icon-secundary-red
+{
+    display: inline-block;
+    align-self: center;
+    color: var(--red);
+    padding: 1em;
+    margin-right: 1em;
+    background: var(--lightRed);
+    border-radius: 0.3em;
+}
+
 
 .icon-white i.far, .icon-white i.fas
 {
@@ -306,6 +370,19 @@ nav .navtop button i .fas
     font-weight: 700;
 }
 
+.box-title-secundary p
+{
+    margin: 0;
+    font-size: 0.7em;
+    text-transform: uppercase;
+}
+
+.box-title-secundary h4
+{
+    margin: 0;
+    font-size: 1.1em;
+}
+
 .title-dark-green h4
 {
     color: var(--darkGreen);
@@ -331,14 +408,33 @@ nav .navtop button i .fas
     color: white;
 }
 
+.box-light-green 
+{
+    background:var(--green);
+}
+
 .box-red 
 {
     background:var(--lightRed);
 }
 
+.box-small
+{
+    font-size: 0.8em;
+    display: block;
+    text-align: end;
+}
+
 .box-small-green
 {
-    background: chocolate;
+    background: var(--green);
+    padding: 0.5em;
+}
+
+.box-small-red
+{
+    background: var(--lightRed);
+    padding: 0.5em;
 }
 
 
@@ -353,7 +449,8 @@ nav .navtop button i .fas
 
 .dashboard-content
 {
-    border: 1px solid red;
+    border: 1px solid rgba(128, 128, 128, 0.144);
+    border-radius: 0.4em;
 }
 
 .title-small h6
@@ -372,4 +469,124 @@ nav .navtop button i .fas
 {
     color: var(--red);
     font-weight: 600;
+}
+
+.city 
+{
+    padding-bottom: 1em;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.144);
+}
+
+.number-text
+{
+    margin-left: auto;
+    align-self: center;
+}
+
+.box-reactors
+{
+    display: block;
+    padding: 1em;
+    border: 1px solid rgba(128, 128, 128, 0.144);
+    border-radius: 0.4em;
+    align-self: center;
+    text-align: center;
+}
+
+.box-reactors button
+{
+    position: realtive;
+    border: none;
+    font-size: 0.6em;
+    color: var(--dark);
+    margin-left: 0;
+    left: 0;
+    border: 1px solid red;
+}
+
+.box-reactors-green i.fas, .box-reactors-green i.far
+{
+    color: var(--darkGreen);
+    font-size: 2em;
+}
+
+.box-reactors-green h6
+{
+    padding-top: 0.5em;
+    color: var(--dark);
+    margin: 0;
+}
+
+.box-reactors-green p
+{
+    color: var(--dark);
+    margin: 0;
+    font-size: 0.8em;
+}
+
+.box-reactors-red
+{
+    background: var(--lightRed);
+}
+
+.box-reactors-red i.fas, .box-reactors-red i.far
+{
+    color: var(--red);
+    font-size: 2em;
+}
+
+.box-reactors-red h6
+{
+    padding-top: 0.5em;
+    color: var(--dark);
+    margin: 0;
+}
+
+.box-reactors-red p
+{
+    color: var(--dark);
+    margin: 0;
+    font-size: 0.8em;
+}
+
+.box-reactors-vertical
+{
+    display: flex;
+    text-align: initial;
+    margin-top: 1em;
+    align-items: center;
+    font-size: 0.8em;
+    justify-content: center;
+}
+
+.box-reactors-secundary-red
+{
+    display: inline-block;
+    align-self: center;
+    padding: 1em;
+    margin-right: 1em;
+    background: var(--green);
+    border-radius: 0.3em;
+}
+
+.box-reactors-secundary-green
+{
+    display: inline-block;
+    align-self: center;
+    padding: 1em;
+    margin-right: 1em;
+    background: var(--green);
+    border-radius: 0.3em;
+}
+
+.box-reactors-secundary-green i.fas, .box-reactors-secundary-green i.far
+{
+    color: var(--darkGreen);
+}
+
+
+
+.box-reactors-secundary
+{
+    color: var(--dark);
 }
