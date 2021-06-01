@@ -14,6 +14,12 @@ html, body
     height: 100%;
 }
 
+body
+{
+    border: 1px solid red;
+    background: var(--gray);
+}
+
 .container_dashboard
 {
     padding: 1em 1em 1em 1em
@@ -263,7 +269,7 @@ nav .navtop button i .fas
     margin-bottom: 1.5em;
     color: var(--dark);
     border-radius: 0.3em;
-    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.384);
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.100);
 }
 
 .box-primary h4
@@ -296,14 +302,14 @@ nav .navtop button i .fas
     margin-bottom: 1.5em;
     color: var(--dark);
     border-radius: 0.3em;
-    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.384);
+    border: 1px solid rgba(128, 128, 128, 0.300);
 }
 
 .alert-bars
 {
     margin-top: 1em;
     margin-bottom: 1em;
-    border-bottom: 1px solid rgba(128, 128, 128, 0.300);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.250);
 }
 
 .box-icon
@@ -487,6 +493,7 @@ nav .navtop button i .fas
 {
     display: block;
     padding: 1em;
+    margin-bottom: 1em;
     border: 1px solid rgba(128, 128, 128, 0.144);
     border-radius: 0.4em;
     align-self: center;
@@ -495,13 +502,16 @@ nav .navtop button i .fas
 
 .box-reactors button
 {
-    position: realtive;
+    float: right;
     border: none;
-    font-size: 0.6em;
-    color: var(--dark);
+    font-size: 0.4em;
     margin-left: 0;
     left: 0;
-    border: 1px solid red;
+}
+
+.box-reactors button i.fas, .box-reactors button i.far
+{
+    color: rgba(128, 128, 128, 0.500);
 }
 
 .box-reactors-green i.fas, .box-reactors-green i.far
