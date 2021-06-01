@@ -131,6 +131,14 @@ nav .navbar-link, btn
 {
     color: var(--lightGreen);
     padding-left: 1em;
+    transition: 0.3s;
+}
+
+nav a:hover
+{
+    color: var(--darkGreen);
+    padding-left: 1em;
+    transition: 0.3s;
 }
 
 nav .nav-icon 
@@ -463,6 +471,13 @@ nav .navtop button i .fas
     font-size: 0.8em;
     font-weight: 600;
     margin-right: 2em;
+    transition: 0.3s;
+}
+
+.sub-menu a:hover
+{
+    color: var(--darkGreen);
+    transition: 0.3s;
 }
 
 .dashboard-content
@@ -731,3 +746,29 @@ nav .navtop button i .fas
 
 
 /*Configurações Responsividade*/
+
+
+@media (max-width: 767.98px) {
+    .sidebar-box-head{
+        display: none;
+    }
+
+    .sidebar-box h6{
+        display: none;
+    }
+}
+
+
+@media (max-width: 991.98px) {
+    .sidebar-item p{
+        display: none;
+    }
+}
+
+
+@media (max-width: 1199.98px) {
+    .sidebar-box h6{
+        font-size: 0.5em;
+    }
+    
+}
