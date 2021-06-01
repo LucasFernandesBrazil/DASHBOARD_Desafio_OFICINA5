@@ -14,21 +14,21 @@ html, body
     height: 100%;
 }
 
-body
+main
 {
-    background: var(--gray);
+    background-color: var(--gray);
 }
 
 .container_dashboard
 {
-    padding: 1em 1em 1em 1em
+    padding: 1em 1em 1em 1em;
 }
 
 :root 
 {
     --dark: rgb(32, 32, 32)
     --white: #eeeeeb;
-    --gray: #93a5ad;
+    --gray: #F2F5F9;
     --green: #F0F7EE;
     --darkGreen: #53A451;
     --lightGreen: #accc46;
@@ -52,6 +52,7 @@ header
     overflow-x: hidden;
     z-index: 1;
     transition: 0.5s;
+    background-color: white;
 }
 
 .sidebar-box-head
@@ -164,7 +165,7 @@ nav .navtop button i .fas
 {
     width: 100%;
     display: inline-block;
-    background-color:rgb(229,237, 217)
+    background-color:rgb(229,237, 217);
 }
 
 .infoBar-box
@@ -201,6 +202,7 @@ nav .navtop button i .fas
 {
     box-shadow: 0 0 0.2em rgba(0, 0, 0, 0.397);
     display: flex;
+    background-color: white;
 }
 
 .title
@@ -269,6 +271,7 @@ nav .navtop button i .fas
     color: var(--dark);
     border-radius: 0.3em;
     box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.100);
+    background-color: white;
 }
 
 .box-primary h4
@@ -302,6 +305,7 @@ nav .navtop button i .fas
     color: var(--dark);
     border-radius: 0.3em;
     border: 1px solid rgba(128, 128, 128, 0.300);
+    background-color: white;
 }
 
 .alert-bars
@@ -456,6 +460,7 @@ nav .navtop button i .fas
 {
     border: 1px solid rgba(128, 128, 128, 0.144);
     border-radius: 0.4em;
+    background-color: white;
 }
 
 .title-small h6
@@ -598,4 +603,31 @@ nav .navtop button i .fas
 .box-reactors-secundary
 {
     color: var(--dark);
+}
+
+.statusReactor
+{
+    display: flex;
+}
+
+.statusReactorGreen p
+{
+    color: var(--darkGreen);
+    text-transform: uppercase;
+    font-size: 0.75em;
+    font-weight: 700;
+    margin-left: 0.5em;
+    text-align: center;
+    border: 1px solid red;
+}
+
+.statusReactorGreen i.fas, .statusReactorGreen i.far
+{
+    color: var(--darkGreen);
+    font-size: 0.75em;
+}
+
+.statusReactorGreen span
+{
+    margin-left: auto;
 }
