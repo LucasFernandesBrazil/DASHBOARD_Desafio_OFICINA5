@@ -605,29 +605,10 @@ nav .navtop button i .fas
     color: var(--dark);
 }
 
-.statusReactor
-{
-    display: flex;
+.content {
+    background-color: #F2F2F2;
 }
 
-.statusReactorGreen p
-{
-    color: var(--darkGreen);
-    text-transform: uppercase;
-    font-size: 0.75em;
-    font-weight: 700;
-    margin-left: 0.5em;
-    text-align: center;
-    border: 1px solid red;
-}
-
-.statusReactorGreen i.fas, .statusReactorGreen i.far
-{
-    color: var(--darkGreen);
-    font-size: 0.75em;
-}
-
-.statusReactorGreen span
-{
-    margin-left: auto;
+.bkg-white {
+    background-color: white;
 }
