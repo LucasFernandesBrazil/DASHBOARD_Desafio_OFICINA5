@@ -16,7 +16,6 @@ html, body
 
 body
 {
-    border: 1px solid red;
     background: var(--gray);
 }
 
@@ -575,7 +574,7 @@ nav .navtop button i .fas
     align-self: center;
     padding: 1em;
     margin-right: 1em;
-    background: var(--green);
+    background: rgb(255, 214, 214);
     border-radius: 0.3em;
 }
 
